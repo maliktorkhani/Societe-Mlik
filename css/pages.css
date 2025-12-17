@@ -1495,8 +1495,20 @@
 
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: var(--spacing-lg);
+}
+
+@media (max-width: 900px) {
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .info-section .info-card {
@@ -2127,5 +2139,77 @@
 
     #lightbox-image {
         max-height: 70vh;
+    }
+}
+
+.simulateur-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.simulateur-card {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+}
+
+.simulateur-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.simulateur-image {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    /* Reduced height further for 5 columns */
+    overflow: hidden;
+}
+
+.simulateur-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.simulateur-card:hover .simulateur-image img {
+    transform: scale(1.1);
+}
+
+.simulateur-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.simulateur-card:hover .simulateur-overlay {
+    opacity: 1;
+}
+
+/* Responsive Simulator Grid */
+@media (max-width: 1200px) {
+    .simulateur-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .simulateur-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .simulateur-grid {
+        grid-template-columns: 1fr;
     }
 }
