@@ -10,7 +10,7 @@
     --primary-light: #e74856;
     --secondary-color: #c59d5f;
     --secondary-dark: #a67f42;
-    
+
     /* Couleurs neutres */
     --dark: #1a1a1a;
     --gray-dark: #000000;
@@ -19,17 +19,17 @@
     --gray-lighter: #e5e5e5;
     --white: #ffffff;
     --background: #f8f9fa;
-    
+
     /* Couleurs fonctionnelles */
     --success: #28a745;
     --danger: #dc3545;
     --warning: #ffc107;
     --info: #17a2b8;
-    
+
     /* Typographie */
     --font-primary: 'Poppins', sans-serif;
     --font-heading: 'Playfair Display', serif;
-    
+
     /* Espacements */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
@@ -37,18 +37,18 @@
     --spacing-lg: 3rem;
     --spacing-xl: 4rem;
     --spacing-xxl: 6rem;
-    
+
     /* Transitions */
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
-    
+
     /* Ombres */
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15);
     --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.2);
-    
+
     /* Border radius */
     --radius-sm: 4px;
     --radius-md: 8px;
@@ -161,11 +161,13 @@ button {
     letter-spacing: 1px;
     margin-top: 2px;
     transition: var(--transition-normal);
-    filter: brightness(0) invert(1); /* Logo blanc par défaut */
+    filter: brightness(0) invert(1);
+    /* Logo blanc par défaut */
 }
 
 .navbar.scrolled .logo-image {
-    filter: none; /* Logo original au scroll */
+    filter: none;
+    /* Logo original au scroll */
 }
 
 .nav-menu {
@@ -175,7 +177,8 @@ button {
 }
 
 .nav-menu a {
-    color: var(--white); /* Blanc par défaut */
+    color: var(--white);
+    /* Blanc par défaut */
     font-weight: 500;
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--radius-sm);
@@ -183,12 +186,14 @@ button {
 }
 
 .navbar.scrolled .nav-menu a {
-    color: var(--gray-dark); /* Gris foncé au scroll */
+    color: var(--gray-dark);
+    /* Gris foncé au scroll */
 }
 
 .nav-menu a:hover,
 .nav-menu a.active {
-    color: var(--secondary-color); /* Couleur secondaire au survol (plus lisible sur fond sombre) */
+    color: var(--secondary-color);
+    /* Couleur secondaire au survol (plus lisible sur fond sombre) */
 }
 
 .navbar.scrolled .nav-menu a:hover,
@@ -242,7 +247,8 @@ button {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    margin-top: 0; /* Supprimé pour que la navbar transparente soit au-dessus */
+    margin-top: 0;
+    /* Supprimé pour que la navbar transparente soit au-dessus */
 }
 
 .hero-overlay {
@@ -291,6 +297,7 @@ button {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -322,12 +329,19 @@ button {
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         transform: translateX(-50%) translateY(0);
     }
+
     40% {
         transform: translateX(-50%) translateY(-10px);
     }
+
     60% {
         transform: translateX(-50%) translateY(-5px);
     }
@@ -635,6 +649,7 @@ section {
     color: var(--primary-color);
     margin-right: 5px;
 }
+
 /* ==========================================================================
    simulateur Section
    ========================================================================== */
@@ -760,6 +775,7 @@ section {
     color: var(--primary-color);
     margin-right: 5px;
 }
+
 /* ==========================================================================
    Services Section
    ========================================================================== */
@@ -769,7 +785,7 @@ section {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(6, 1fr);
     gap: var(--spacing-lg);
 }
 
@@ -1016,15 +1032,15 @@ section {
         --spacing-xl: 3rem;
         --spacing-xxl: 4rem;
     }
-    
+
     .hero-title {
         font-size: 3rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .about-content {
         gap: var(--spacing-lg);
     }
@@ -1037,12 +1053,12 @@ section {
         --spacing-xl: 2.5rem;
         --spacing-xxl: 3rem;
     }
-    
+
     /* Navigation Mobile */
     .burger-menu {
         display: flex;
     }
-    
+
     .nav-menu {
         position: fixed;
         top: 70px;
@@ -1056,137 +1072,137 @@ section {
         transition: var(--transition-normal);
         box-shadow: var(--shadow-lg);
     }
-    
+
     .nav-menu.active {
         left: 0;
     }
-    
+
     .nav-menu a {
         width: 100%;
         padding: var(--spacing-md);
         text-align: center;
         border-bottom: 1px solid var(--gray-lighter);
     }
-    
+
     .burger-menu.active span:nth-child(1) {
         transform: rotate(45deg) translate(8px, 8px);
     }
-    
+
     .burger-menu.active span:nth-child(2) {
         opacity: 0;
     }
-    
+
     .burger-menu.active span:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -7px);
     }
-    
+
     /* Hero */
     .hero {
         height: auto;
         min-height: 500px;
         background-attachment: scroll;
     }
-    
+
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1rem;
     }
-    
+
     .hero-buttons {
         flex-direction: column;
         align-items: stretch;
     }
-    
+
     .hero-buttons .btn {
         width: 100%;
     }
-    
+
     /* Sections */
     section {
         padding: var(--spacing-xl) 0;
     }
-    
+
     .section-title {
         font-size: 1.75rem;
     }
-    
+
     .section-description {
         font-size: 1rem;
     }
-    
+
     /* About */
     .about-content {
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
     }
-    
+
     .about-text {
         font-size: 1rem;
     }
-    
+
     .about-lead {
         font-size: 1.125rem;
     }
-    
+
     /* Projects */
     .projects-grid {
         grid-template-columns: 1fr;
     }
-    
+
     /* Services */
     .services-grid {
         grid-template-columns: 1fr;
     }
-    
+
     /* CTA */
     .cta-section h2 {
         font-size: 1.75rem;
     }
-    
+
     .cta-section p {
         font-size: 1rem;
     }
-    
+
     .cta-buttons {
         flex-direction: column;
         align-items: stretch;
     }
-    
+
     .cta-buttons .btn {
         width: 100%;
     }
-    
+
     /* Newsletter */
     .newsletter-content {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .newsletter-form {
         flex-direction: column;
         width: 100%;
         max-width: 100%;
     }
-    
+
     .newsletter-form input,
     .newsletter-form button {
         width: 100%;
     }
-    
+
     /* Footer */
     .footer-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
     }
-    
+
     .footer-bottom {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .footer-links {
         flex-direction: column;
         gap: var(--spacing-sm);
@@ -1198,19 +1214,19 @@ section {
     .container {
         padding: 0 var(--spacing-sm);
     }
-    
+
     .hero-title {
         font-size: 1.75rem;
     }
-    
+
     .logo-text {
         font-size: 1.5rem;
     }
-    
+
     .project-features {
         flex-direction: column;
     }
-    
+
     .project-features span {
         width: 100%;
         text-align: center;
@@ -1232,12 +1248,34 @@ section {
     color: var(--secondary-color);
 }
 
-.mb-1 { margin-bottom: var(--spacing-xs); }
-.mb-2 { margin-bottom: var(--spacing-sm); }
-.mb-3 { margin-bottom: var(--spacing-md); }
-.mb-4 { margin-bottom: var(--spacing-lg); }
+.mb-1 {
+    margin-bottom: var(--spacing-xs);
+}
 
-.mt-1 { margin-top: var(--spacing-xs); }
-.mt-2 { margin-top: var(--spacing-sm); }
-.mt-3 { margin-top: var(--spacing-md); }
-.mt-4 { margin-top: var(--spacing-lg); }
+.mb-2 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.mb-3 {
+    margin-bottom: var(--spacing-md);
+}
+
+.mb-4 {
+    margin-bottom: var(--spacing-lg);
+}
+
+.mt-1 {
+    margin-top: var(--spacing-xs);
+}
+
+.mt-2 {
+    margin-top: var(--spacing-sm);
+}
+
+.mt-3 {
+    margin-top: var(--spacing-md);
+}
+
+.mt-4 {
+    margin-top: var(--spacing-lg);
+}
