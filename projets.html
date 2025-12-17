@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Projets - MLIK Société Immobilière</title>
+    <meta name="description" content="Découvrez tous les projets immobiliers de qualité de la société MLIK en Tunisie.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="MLIK - Société Immobilière" class="logo-image">
+                </a>
+            </div>
+
+            <button class="burger-menu" id="burgerMenu" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="groupe.html">Le Groupe</a></li>
+                <li><a href="simulateur.html">Simulateur</a></li>
+                <li><a href="contact.html" class="btn-contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <h1>Nos Projets Immobiliers</h1>
+            <p>Des résidences d'exception qui allient confort, modernité et qualité de vie</p>
+            <div class="breadcrumb">
+                <a href="index.html">Accueil</a> <i class="fas fa-chevron-right"></i> <span>Projets</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Tous les projets</button>
+                <button class="filter-btn" data-filter="disponible">Disponible</button>
+                <button class="filter-btn" data-filter="construction">En construction</button>
+                <button class="filter-btn" data-filter="prestige">Prestige</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-page-section">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Le Méridian -->
+                <div class="project-card" data-category="disponible">
+                    <div class="project-image">
+                        <img src="assets/3.jpg" alt="Résidence Le Méridian">
+                        <div class="project-overlay">
+                            <a href="project_meridien.html" class="btn btn-light">Voir les détails</a>
+                        </div>
+                        <span class="project-badge">Disponible</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Résidence LE Méridian</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Sidi Fradj, La Soukra</p>
+                        <p class="project-description">Une architecture moderne et épurée, intégrée au cœur de la Ville.
+                            Ce projet offre un cadre de vie exceptionnel avec des finitions haut de gamme.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-home"></i> Appartements S+1 à S+4</span>
+                            <span><i class="fas fa-parking"></i> Parking privé</span>
+                            <span><i class="fas fa-tree"></i> Espaces verts</span>
+                            <span><i class="fas fa-shield-alt"></i> Sécurité 24/7</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-price">À partir de 280,000 TND</div>
+                            <a href="contact.html" class="btn btn-primary btn-sm">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Radisson -->
+                <div class="project-card" data-category="prestige">
+                    <div class="project-image">
+                        <img src="assets/2.jpg" alt="Radisson">
+                        <div class="project-overlay">
+                            <a href="projet-radisson.html" class="btn btn-light">Voir les détails</a>
+                        </div>
+                        <span class="project-badge badge-featured">Prestige</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Radisson</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Avenue Habib Bourguiba,
+                            Megrine</p>
+                        <p class="project-description">LE RADISSON se situe à l'artère principale de la ville de
+                            MEGRINE. Une gamme d'appartements luxueux et de prestige dans un emplacement idéal avec tous
+                            les commodités.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-star"></i> Finitions luxueuses</span>
+                            <span><i class="fas fa-building"></i> Architecture moderne</span>
+                            <span><i class="fas fa-elevator"></i> Ascenseur</span>
+                            <span><i class="fas fa-wifi"></i> Fibre optique</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-price">À partir de 450,000 TND</div>
+                            <a href="contact.html" class="btn btn-primary btn-sm">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Le Negresco -->
+                <div class="project-card" data-category="construction prestige">
+                    <div class="project-image">
+                        <img src="assets/5.jpg" alt="Résidence Le Negresco">
+                        <div class="project-overlay">
+                            <a href="projet-negresco.html" class="btn btn-light">Voir les détails</a>
+                        </div>
+                        <span class="project-badge badge-sold">En construction</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Résidence LE Negresco</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Les Jardins de Carthage, Tunis
+                        </p>
+                        <p class="project-description">Tout un mélange de palladianisme antique et de modernité dans un
+                            ensemble résidentiel unique. Un projet d'exception dans le prestigieux quartier des Jardins
+                            de Carthage.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-leaf"></i> Grand jardin</span>
+                            <span><i class="fas fa-shield-alt"></i> Sécurité 24/7</span>
+                            <span><i class="fas fa-swimming-pool"></i> Piscine commune</span>
+                            <span><i class="fas fa-dumbbell"></i> Salle de sport</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-price">À partir de 520,000 TND</div>
+                            <a href="contact.html" class="btn btn-primary btn-sm">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Le Capitole -->
+                <div class="project-card" data-category="disponible">
+                    <div class="project-image">
+                        <img src="assets/1.jpg" alt="Le Capitole">
+                        <div class="project-overlay">
+                            <a href="projet-capitole.html" class="btn btn-light">Voir les détails</a>
+                        </div>
+                        <span class="project-badge">Disponible</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Le Capitole</h3>
+                        <p class="project-location"><i class="fas fa-map-marker-alt"></i> Choutrana II, La Soukra</p>
+                        <p class="project-description">LE Capitole un projet de construction d'une résidence cousu, se
+                            situant à Choutrana II en face de l'université. Une cité en plein essor avec toutes les
+                            commodités.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-graduation-cap"></i> Proche université</span>
+                            <span><i class="fas fa-bus"></i> Transport proche</span>
+                            <span><i class="fas fa-shopping-cart"></i> Commerces</span>
+                            <span><i class="fas fa-hospital"></i> Hôpital à proximité</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-price">À partir de 320,000 TND</div>
+                            <a href="contact.html" class="btn btn-primary btn-sm">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Intéressé par l'un de nos projets ?</h2>
+            <p>Contactez-nous pour une visite personnalisée ou pour plus d'informations</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-light">Prendre rendez-vous</a>
+                <a href="simulateur.html" class="btn btn-outline-light"><i class="fas fa-calculator"></i> Simuler mon
+                    crédit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <span class="logo-text">MLIK</span>
+                        <span class="logo-subtitle">Société Immobilière</span>
+                    </div>
+                    <p>Votre partenaire immobilier de confiance en Tunisie depuis plus de 20 ans.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="presentation.html">Présentation</a></li>
+                        <li><a href="projets.html">Projets</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="groupe.html">Le Groupe</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Nos Projets</h4>
+                    <ul>
+                        <li><a href="projet-meridian.html">Le Méridian</a></li>
+                        <li><a href="projet-radisson.html">Radisson</a></li>
+                        <li><a href="projet-negresco.html">Le Negresco</a></li>
+                        <li><a href="projet-capitole.html">Le Capitole</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Bureau B12-1ère étage<br>Résidence Al OMARA<br>Les
+                            Jardins de Carthage, Tunis</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+21671264260">(+216) 71 264 260</a></li>
+                        <li><i class="fas fa-user"></i> Hassen MLIK<br><a href="tel:+21653064797">+216 53 064 797</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 MLIK Société Immobilière. Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="mentions-legales.html">Mentions légales</a>
+                    <a href="politique-confidentialite.html">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MLIK Société Immobilière</title>
+    <meta name="description" content="Contactez MLIK Société Immobilière pour tous vos projets immobiliers en Tunisie.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="MLIK - Société Immobilière" class="logo-image">
+                </a>
+            </div>
+
+            <button class="burger-menu" id="burgerMenu" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="groupe.html">Le Groupe</a></li>
+                <li><a href="simulateur.html">Simulateur</a></li>
+                <li><a href="contact.html" class="btn-contact" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <h1>Contactez-Nous</h1>
+            <p>Notre équipe est à votre écoute pour répondre à toutes vos questions</p>
+            <div class="breadcrumb">
+                <a href="index.html">Accueil</a> <i class="fas fa-chevron-right"></i> <span>Contact</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Envoyez-nous un Message</h2>
+                    <p class="form-description">Remplissez le formulaire ci-dessous et nous vous répondrons dans les
+                        plus brefs délais.</p>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nom">Nom complet *</label>
+                                <input type="text" id="nom" name="nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telephone">Téléphone *</label>
+                                <input type="tel" id="telephone" name="telephone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sujet">Sujet</label>
+                            <select id="sujet" name="sujet">
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="information">Demande d'information</option>
+                                <option value="visite">Demande de visite</option>
+                                <option value="reservation">Réservation</option>
+                                <option value="financement">Financement</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="projet">Projet qui vous intéresse</label>
+                            <select id="projet" name="projet">
+                                <option value="">Sélectionnez un projet</option>
+                                <option value="meridian">Le Méridian - Sidi Fradj</option>
+                                <option value="radisson">Radisson - Megrine</option>
+                                <option value="negresco">Le Negresco - Jardins de Carthage</option>
+                                <option value="capitole">Le Capitole - Choutrana II</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                    </form>
+
+                    <div class="form-success" id="formSuccess">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Merci ! Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs
+                            délais.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper">
+                    <h2>Informations de Contact</h2>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Adresse</h3>
+                            <p>Route de Gamarth Km1<br>La Marsa<br>Tunisia</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Téléphone</h3>
+                            <p><a href="tel:+21671264260">(+216) 71 264 260</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Conseiller Commercial</h3>
+                            <p><strong>Hassen MLIK</strong><br><a href="tel:+21653064797">+216 53 064 797</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Horaires d'ouverture</h3>
+                            <p>Lundi - Vendredi: 8h30 - 17h30<br>Samedi: 9h00 - 13h00<br>Dimanche: Fermé</p>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-links-large">
+                            <a href="https://www.facebook.com/simmlik/" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Nous Trouver</h2>
+            <div class="map-wrapper">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3199.7507826874404!2d10.3075052!3d36.8761682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e2b509a8e5f085%3A0x8b6fe68f386a9b16!2sOceram!5e0!3m2!1sfr!2stn!4v1764712141"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Prêt à Investir dans Votre Futur ?</h2>
+            <p>Visitez nos projets et découvrez la qualité MLIK</p>
+            <div class="cta-buttons">
+                <a href="projets.html" class="btn btn-light">Voir nos projets</a>
+                <a href="simulateur.html" class="btn btn-outline-light"><i class="fas fa-calculator"></i> Simuler mon
+                    crédit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <span class="logo-text">MLIK</span>
+                        <span class="logo-subtitle">Société Immobilière</span>
+                    </div>
+                    <p>Votre partenaire immobilier de confiance en Tunisie depuis plus de 20 ans.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="presentation.html">Présentation</a></li>
+                        <li><a href="projets.html">Projets</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="groupe.html">Le Groupe</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Nos Projets</h4>
+                    <ul>
+                        <li><a href="projet-meridian.html">Le Méridian</a></li>
+                        <li><a href="projet-radisson.html">Radisson</a></li>
+                        <li><a href="projet-negresco.html">Le Negresco</a></li>
+                        <li><a href="projet-capitole.html">Le Capitole</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Bureau B12-1ère étage<br>Résidence Al OMARA<br>Les
+                            Jardins de Carthage, Tunis</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+21671264260">(+216) 71 264 260</a></li>
+                        <li><i class="fas fa-user"></i> Hassen MLIK<br><a href="tel:+21653064797">+216 53 064 797</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 MLIK Société Immobilière. Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="mentions-legales.html">Mentions légales</a>
+                    <a href="politique-confidentialite.html">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
