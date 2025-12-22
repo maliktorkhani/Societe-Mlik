@@ -1898,19 +1898,22 @@
     padding: var(--spacing-lg) 0;
 }
 
-.service-details .container {
+.service-details .container,
+#padel-service-details .container {
     display: grid;
     grid-template-columns: 1.5fr 1.5fr 1fr;
     gap: var(--spacing-lg);
     align-items: start;
 }
 
-.service-details .col {
+.service-details .col,
+#padel-service-details .col {
     display: flex;
     flex-direction: column;
 }
 
-.service-details .col h2 {
+.service-details .col h2,
+#padel-service-details .col h2 {
     font-family: var(--font-heading);
     font-size: 1.75rem;
     font-weight: 700;
@@ -1918,7 +1921,8 @@
     margin-bottom: var(--spacing-md);
 }
 
-.service-details .col h3 {
+.service-details .col h3,
+#padel-service-details .col h3 {
     font-family: var(--font-body);
     font-size: 1.25rem;
     font-weight: 600;
@@ -1930,24 +1934,28 @@
     font-family: var(--font-body);
 }
 
-.service-details .col.left {
+.service-details .col.left,
+#padel-service-details .col.left {
     border-right: 2px solid var(--gray-lighter);
     padding-right: var(--spacing-lg);
 }
 
-.service-details .col.right {
+.service-details .col.right,
+#padel-service-details .col.right {
     border-left: 2px solid var(--gray-lighter);
     padding-left: var(--spacing-lg);
 }
 
 /* Tabs for floors */
-.service-details .tabs {
+.service-details .tabs,
+#padel-service-details .tabs {
     display: flex;
     gap: var(--spacing-sm);
     margin-bottom: var(--spacing-md);
 }
 
-.service-details .tab-btn {
+.service-details .tab-btn,
+#padel-service-details .tab-btn {
     padding: var(--spacing-xs) var(--spacing-sm);
     background: var(--background);
     border: 2px solid var(--gray-lighter);
@@ -1959,7 +1967,9 @@
 }
 
 .service-details .tab-btn:hover,
-.service-details .tab-btn.active {
+.service-details .tab-btn.active,
+#padel-service-details .tab-btn:hover,
+#padel-service-details .tab-btn.active {
     background: var(--primary-color);
     border-color: var(--primary-color);
     color: var(--white);
@@ -2059,7 +2069,8 @@
 }
 
 /* Preview images */
-.service-details .preview {
+.service-details .preview,
+#padel-service-details .preview {
     width: 100%;
     height: auto;
     border-radius: var(--radius-lg);
@@ -2069,19 +2080,23 @@
 
 /* Responsive layout for smaller screens */
 @media (max-width: 1200px) {
-    .service-details .container {
+
+    .service-details .container,
+    #padel-service-details .container {
         grid-template-columns: 1fr;
         gap: var(--spacing-md);
     }
 
-    .service-details .col.left {
+    .service-details .col.left,
+    #padel-service-details .col.left {
         border-right: none;
         border-bottom: 2px solid var(--gray-lighter);
         padding-right: 0;
         padding-bottom: var(--spacing-md);
     }
 
-    .service-details .col.right {
+    .service-details .col.right,
+    #padel-service-details .col.right {
         border-left: none;
         padding-left: 0;
     }
