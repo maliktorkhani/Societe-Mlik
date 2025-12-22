@@ -32,6 +32,51 @@
     color: var(--white);
 }
 
+/* Project-specific header background for Radisson */
+.page-header.radisson-header {
+    background-image: url("../assets/radisson.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: var(--white);
+}
+
+.page-header.radisson-header .breadcrumb,
+.page-header.radisson-header p,
+.page-header.radisson-header h1 {
+    color: var(--white);
+}
+
+/* Project-specific header background for Negresco */
+.page-header.negresco-header {
+    background-image: url("../assets/negresco.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: var(--white);
+}
+
+.page-header.negresco-header .breadcrumb,
+.page-header.negresco-header p,
+.page-header.negresco-header h1 {
+    color: var(--white);
+}
+
+/* Project-specific header background for Capitole */
+.page-header.capitole-header {
+    background-image: url("../assets/capitole.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: var(--white);
+}
+
+.page-header.capitole-header .breadcrumb,
+.page-header.capitole-header p,
+.page-header.capitole-header h1 {
+    color: var(--white);
+}
+
 .page-header-overlay {
     position: absolute;
     top: 0;
