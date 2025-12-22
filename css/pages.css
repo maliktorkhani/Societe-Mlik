@@ -2273,3 +2273,43 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* Villa Vence Vertical Layout (Single Block) */
+.project-media-split {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.video-container {
+    width: 100%;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    /* Sticky positioning removed for single block layout */
+}
+
+.video-container video {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 80vh;
+    /* Prevent video from taking up too much vertical space */
+}
+
+.project-images-grid {
+    width: 100%;
+    display: grid;
+    /* Responsive grid: auto-fill with min width */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+}
+
+/* Responsive adjustments (optional, since layout is already vertical) */
+@media (max-width: 600px) {
+    .project-images-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
