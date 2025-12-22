@@ -77,6 +77,21 @@
     color: var(--white);
 }
 
+/* Project-specific header background for Villa Vence */
+.page-header.villa-vence-header {
+    background-image: url("../assets/villa_france.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: var(--white);
+}
+
+.page-header.villa-vence-header .breadcrumb,
+.page-header.villa-vence-header p,
+.page-header.villa-vence-header h1 {
+    color: var(--white);
+}
+
 .page-header-overlay {
     position: absolute;
     top: 0;
