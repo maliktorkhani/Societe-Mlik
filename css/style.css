@@ -595,7 +595,7 @@ section {
 }
 
 .badge-featured {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 .badge-sold {
@@ -721,7 +721,7 @@ section {
 }
 
 .badge-featured {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 .badge-sold {
