@@ -3,29 +3,32 @@ document.addEventListener('DOMContentLoaded', function () {
     function initPadelCityPlans() {
         // Data structure for blocs per floor
         const floorsData = {
-            blockA: [
-                { nom: "Bloc A", apart: "A0-1", type: "Appt 01", etage: "Bloc A", surface: "-", jardin: "-", img1: "assets/ptojet padelCity/A01-1.jpg", img2: "assets/ptojet padelCity/A01-2.jpg" },
-                { nom: "Bloc A", apart: "A0-2", type: "Appt 02", etage: "Bloc A", surface: "-", jardin: "-", img1: "assets/ptojet padelCity/A02-1.jpg", img2: "assets/ptojet padelCity/A02-2.jpg" },
-                { nom: "Bloc A", apart: "A0-3", type: "Appt 03", etage: "Bloc A", surface: "-", jardin: "-", img1: "assets/ptojet padelCity/A03-1.jpg", img2: "assets/ptojet padelCity/A03-2.jpg" },
-                { nom: "Bloc A", apart: "A1-1", type: "Appt 11", etage: "Bloc A", surface: "-", jardin: "-", img1: "assets/ptojet padelCity/A11-1.jpg", img2: "assets/ptojet padelCity/A11-2.jpg" },
-                { nom: "Bloc A", apart: "A1-2", type: "Appt 12", etage: "Bloc A", surface: "-", jardin: "-", img1: "assets/ptojet padelCity/A12-1.jpg", img2: "assets/ptojet padelCity/A12-2.jpg" },
-                { nom: "Bloc A", apart: "A1-3", type: "Appt 13", etage: "Bloc A", surface: "-", jardin: "-", img1: "assets/ptojet padelCity/A13-1.jpg", img2: "assets/ptojet padelCity/A13-2.jpg" },
-                { nom: "Bloc A", apart: "A1-4", type: "Appt 14", etage: "Bloc A", surface: "-", jardin: "-", img1: "assets/ptojet padelCity/A14-1.jpg", img2: "assets/ptojet padelCity/A14-2.jpg" },
-                { nom: "Bloc A", apart: "A1-5", type: "Appt 15", etage: "Bloc A", surface: "-", jardin: "-", img1: "assets/ptojet padelCity/A15-1.jpg", img2: "assets/ptojet padelCity/A15-2.jpg" },
-                { nom: "Bloc A", apart: "A1-6", type: "Appt 16", etage: "Bloc A", surface: "-", jardin: "-", img1: "assets/ptojet padelCity/A16-1.jpg", img2: "assets/ptojet padelCity/A16-2.jpg" },
-                { nom: "Bloc A", apart: "A1-7", type: "Appt 17", etage: "Bloc A", surface: "-", jardin: "-", img1: "assets/ptojet padelCity/A17-1.jpg", img2: "assets/ptojet padelCity/A17-2.jpg" },
-                { nom: "Bloc A", apart: "A2-1", type: "Appt 21", etage: "Bloc A", surface: "-", jardin: "-", img1: "assets/ptojet padelCity/A21-1.jpg", img2: "assets/ptojet padelCity/A21-2.jpg" },
-                { nom: "Bloc A", apart: "A2-2", type: "Appt 22", etage: "Bloc A", surface: "-", jardin: "-", img1: "assets/ptojet padelCity/A22-1.jpg", img2: "assets/ptojet padelCity/A22-2.jpg" },
-                { nom: "Bloc A", apart: "A2-3", type: "Appt 23", etage: "Bloc A", surface: "-", jardin: "-", img1: "assets/ptojet padelCity/A23-1.jpg", img2: "assets/ptojet padelCity/A23-2.jpg" },
-                { nom: "Bloc A", apart: "A2-4", type: "Appt 24", etage: "Bloc A", surface: "-", jardin: "-", img1: "assets/ptojet padelCity/A24-1.jpg", img2: "assets/ptojet padelCity/A24-2.jpg" },
-                { nom: "Bloc A", apart: "A2-5", type: "Appt 25", etage: "Bloc A", surface: "-", jardin: "-", img1: "assets/ptojet padelCity/A25-1.jpg", img2: "assets/ptojet padelCity/A25-2.jpg" },
-                { nom: "Bloc A", apart: "A2-6", type: "Appt 26", etage: "Bloc A", surface: "-", jardin: "-", img1: "assets/ptojet padelCity/A26-1.jpg", img2: "assets/ptojet padelCity/A26-2.jpg" },
-                { nom: "Bloc A", apart: "A2-7", type: "Appt 27", etage: "Bloc A", surface: "-", jardin: "-", img1: "assets/ptojet padelCity/A27-1.jpg", img2: "assets/ptojet padelCity/A27-2.jpg" }
+            rdc: [
+                { nom: "Bloc A", apart: "A0-1", type: "S+1", etage: "rdc", surface: "56,90", jardin: "🚫", img1: "assets/ptojet padelCity/A01-1.jpg", img2: "assets/ptojet padelCity/A01-2.jpg" },
+                { nom: "Bloc A", apart: "A0-2", type: "S+1", etage: "rdc", surface: "58,81", jardin: "8,11", img1: "assets/ptojet padelCity/A02-1.jpg", img2: "assets/ptojet padelCity/A02-2.jpg" },
+                { nom: "Bloc A", apart: "A0-3", type: "S+1", etage: "rdc", surface: "60,18", jardin: "27,06", img1: "assets/ptojet padelCity/A03-1.jpg", img2: "assets/ptojet padelCity/A03-2.jpg" },
+                { nom: "Bloc LC", apart: "LC-1", type: "Appt LC1", etage: "rdc", surface: "53,09", jardin: "-", img1: "assets/ptojet padelCity/LC1-1.jpg", img2: "assets/ptojet padelCity/LC1-2.jpg" },
+                { nom: "Bloc LC", apart: "LC-2", type: "Appt LC2", etage: "rdc", surface: "34,28", jardin: "-", img1: "assets/ptojet padelCity/LC2-1.jpg", img2: "assets/ptojet padelCity/LC2-2.jpg" },
+                { nom: "Bloc LC", apart: "LC-3", type: "Appt LC3", etage: "rdc", surface: "242,24", jardin: "63,43", img1: "assets/ptojet padelCity/LC3-1.jpg", img2: "assets/ptojet padelCity/LC3-2.jpg" }
+
             ],
-            blockLC: [
-                { nom: "Bloc LC", apart: "LC-1", type: "Appt LC1", etage: "Bloc LC", surface: "-", jardin: "-", img1: "assets/ptojet padelCity/LC1-1.jpg", img2: "assets/ptojet padelCity/LC1-2.jpg" },
-                { nom: "Bloc LC", apart: "LC-2", type: "Appt LC2", etage: "Bloc LC", surface: "-", jardin: "-", img1: "assets/ptojet padelCity/LC2-1.jpg", img2: "assets/ptojet padelCity/LC2-2.jpg" },
-                { nom: "Bloc LC", apart: "LC-3", type: "Appt LC3", etage: "Bloc LC", surface: "-", jardin: "-", img1: "assets/ptojet padelCity/LC3-1.jpg", img2: "assets/ptojet padelCity/LC3-2.jpg" }
+            etage1: [
+                { nom: "Bloc A", apart: "A1-1", type: "S+1", etage: "1er étage", surface: "53,65", jardin: "🚫", img1: "assets/ptojet padelCity/A11-1.jpg", img2: "assets/ptojet padelCity/A11-2.jpg" },
+                { nom: "Bloc A", apart: "A1-2", type: "S+2", etage: "1er étage", surface: "95,29", jardin: "🚫", img1: "assets/ptojet padelCity/A12-1.jpg", img2: "assets/ptojet padelCity/A12-2.jpg" },
+                { nom: "Bloc A", apart: "A1-3", type: "S+1", etage: "1er étage", surface: "63,50", jardin: "🚫", img1: "assets/ptojet padelCity/A13-1.jpg", img2: "assets/ptojet padelCity/A13-2.jpg" },
+                { nom: "Bloc A", apart: "A1-4", type: "S+1", etage: "1er étage", surface: "56,70", jardin: "🚫", img1: "assets/ptojet padelCity/A14-1.jpg", img2: "assets/ptojet padelCity/A14-2.jpg" },
+                { nom: "Bloc A", apart: "A1-5", type: "S+1", etage: "1er étage", surface: "60,83", jardin: "🚫", img1: "assets/ptojet padelCity/A15-1.jpg", img2: "assets/ptojet padelCity/A15-2.jpg" },
+                { nom: "Bloc A", apart: "A1-6", type: "S+2", etage: "1er étage", surface: "103,56", jardin: "12,81", img1: "assets/ptojet padelCity/A16-1.jpg", img2: "assets/ptojet padelCity/A16-2.jpg" },
+                { nom: "Bloc A", apart: "A1-7", type: "S+3", etage: "1er étage", surface: "125,94", jardin: "🚫", img1: "assets/ptojet padelCity/A17-1.jpg", img2: "assets/ptojet padelCity/A17-2.jpg" },
+            ],
+            etage2: [
+                { nom: "Bloc A", apart: "A2-1", type: "S+1", etage: "2em étage", surface: "53,65", jardin: "🚫", img1: "assets/ptojet padelCity/A21-1.jpg", img2: "assets/ptojet padelCity/A21-2.jpg" },
+                { nom: "Bloc A", apart: "A2-2", type: "S+2", etage: "2em étage", surface: "95,29", jardin: "🚫", img1: "assets/ptojet padelCity/A22-1.jpg", img2: "assets/ptojet padelCity/A22-2.jpg" },
+                { nom: "Bloc A", apart: "A2-3", type: "S+1", etage: "2em étage", surface: "63,50", jardin: "🚫", img1: "assets/ptojet padelCity/A23-1.jpg", img2: "assets/ptojet padelCity/A23-2.jpg" },
+                { nom: "Bloc A", apart: "A2-4", type: "S+1", etage: "2em étage", surface: "56,70", jardin: "🚫", img1: "assets/ptojet padelCity/A24-1.jpg", img2: "assets/ptojet padelCity/A24-2.jpg" },
+                { nom: "Bloc A", apart: "A2-5", type: "S+1", etage: "2em étage", surface: "60,83", jardin: "🚫", img1: "assets/ptojet padelCity/A25-1.jpg", img2: "assets/ptojet padelCity/A25-2.jpg" },
+                { nom: "Bloc A", apart: "A2-6", type: "S+2", etage: "2em étage", surface: "103,94", jardin: "🚫", img1: "assets/ptojet padelCity/A26-1.jpg", img2: "assets/ptojet padelCity/A26-2.jpg" },
+                { nom: "Bloc A", apart: "A2-7", type: "S+3", etage: "2em étage", surface: "125,84", jardin: "🚫", img1: "assets/ptojet padelCity/A27-1.jpg", img2: "assets/ptojet padelCity/A27-2.jpg" }
             ]
         };
 
@@ -99,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         // Initialize with default
-        renderBlocList(currentEtage);
+        renderBlocList('rdc');
 
         // Zoom functionality
         if (zoomImage) {
