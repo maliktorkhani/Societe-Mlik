@@ -795,11 +795,14 @@
     gap: var(--spacing-md);
 }
 
+
 .process-step {
     text-align: center;
     padding: var(--spacing-md);
     position: relative;
 }
+
+
 
 .step-number {
     width: 60px;
