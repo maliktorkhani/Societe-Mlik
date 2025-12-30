@@ -2249,7 +2249,7 @@
 
 .simulateur-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-lg);
 }
 
@@ -2269,8 +2269,8 @@
 .simulateur-image {
     position: relative;
     width: 100%;
-    height: 150px;
-    /* Reduced height further for 5 columns */
+    height: 100%;
+    /* Compact height for smaller card display */
     overflow: hidden;
 }
 
