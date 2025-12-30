@@ -2005,6 +2005,40 @@
     color: var(--white);
 }
 
+/* Sub-tabs for blocs */
+.service-details .sub-tabs,
+#padel-service-details .sub-tabs {
+    display: flex;
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-sm);
+    background: var(--background);
+    border-radius: var(--radius-md);
+}
+
+.service-details .sub-tab-btn,
+#padel-service-details .sub-tab-btn {
+    padding: 6px 12px;
+    background: var(--white);
+    border: 1px solid var(--gray-lighter);
+    border-radius: var(--radius-sm);
+    color: var(--gray-dark);
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--transition-normal);
+}
+
+.service-details .sub-tab-btn:hover,
+.service-details .sub-tab-btn.active,
+#padel-service-details .sub-tab-btn:hover,
+#padel-service-details .sub-tab-btn.active {
+    background: var(--primary-light);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
 /* Bloc list */
 #bloc-list {
     display: flex;
