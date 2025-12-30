@@ -29,6 +29,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 { nom: "Bloc A", apart: "A2-5", type: "S+1", etage: "2em étage", surface: "60,83", jardin: "🚫", img1: "assets/ptojet padelCity/A25-1.jpg", img2: "assets/ptojet padelCity/A25-2.jpg" },
                 { nom: "Bloc A", apart: "A2-6", type: "S+2", etage: "2em étage", surface: "103,94", jardin: "🚫", img1: "assets/ptojet padelCity/A26-1.jpg", img2: "assets/ptojet padelCity/A26-2.jpg" },
                 { nom: "Bloc A", apart: "A2-7", type: "S+3", etage: "2em étage", surface: "125,84", jardin: "🚫", img1: "assets/ptojet padelCity/A27-1.jpg", img2: "assets/ptojet padelCity/A27-2.jpg" }
+            ],
+            villa: [
+                { nom: "Bloc A", apart: "A2-1", type: "S+1", etage: "villa", surface: "53,65", jardin: "🚫", img1: "assets/ptojet padelCity/A21-1.jpg", img2: "assets/ptojet padelCity/A21-2.jpg" },
+                { nom: "Bloc A", apart: "A2-2", type: "S+2", etage: "villa", surface: "95,29", jardin: "🚫", img1: "assets/ptojet padelCity/A22-1.jpg", img2: "assets/ptojet padelCity/A22-2.jpg" },
             ]
         };
 
